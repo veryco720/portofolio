@@ -301,6 +301,18 @@ nav h1::first-letter {
     color: var(--dark-light);
 }
 
+/*==========================
+    STUDY SECTION
+=========================*/
+.study-section {
+    width: 100%;
+    max-width: none;
+    background: var(--bg-light);
+    padding: 100px 5%;
+}
+
+
+
 /* =========================
    SKILLS SECTION
 ========================= */
