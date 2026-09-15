@@ -570,6 +570,133 @@ nav h1::first-letter {
     font-weight: 600;
 }
 
+/*=======================
+  Sertifikasi & Kegiatan 
+  =======================*/
+.certificate-section {
+    background: var(--bg-light);
+    padding: 100px 5%;
+}
+
+.subsection {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.kegiatan-section {
+    margin-top: 50px;
+}
+
+.subsection-title {
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 4px solid var(--primary);
+    color: var(--dark-light);
+    font-size: 24px;
+}
+
+
+/* Sertifikasi */
+.certificate-grid,
+.activity-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.certificate-card,
+.activity-card {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    overflow: hidden;
+
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.certificate-card:hover,
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* Gambar */
+.certificate-image,
+.activity-image {
+    height: 250px;
+}
+
+.certificate-image img,
+.activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Isi */
+.certificate-content,
+.activity-content {
+    padding: 30px;
+}
+
+.card-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+
+    background: #e0f2fe;
+    color: #0369a1;
+
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.certificate-content h3,
+.activity-content h3 {
+    margin-bottom: 10px;
+    color: var(--dark-light);
+    font-size: 20px;
+}
+
+.certificate-content p,
+.activity-content p {
+    margin-bottom: 15px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.card-year {
+    display: inline-block;
+    padding: 5px 12px;
+    background: #f1f5f9;
+    color: #475569;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+    .certificate-card,
+    .activity-card {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-image,
+    .activity-image {
+        height: 220px;
+    }
+}
+
 /* =========================
    CONTACT
 ========================= */
