@@ -575,6 +575,8 @@ nav h1::first-letter {
    ======================= */
 
 .certificate-section {
+    width: 100%;
+    max-width: none;
     background: var(--dark-light);
     padding: 100px 5%;
 }
