@@ -574,7 +574,7 @@ nav h1::first-letter {
   Sertifikasi & Kegiatan 
   =======================*/
 .certificate-section {
-    background: var(--bg-light);
+    background: var(--dark-light);
     padding: 100px 5%;
 }
 
