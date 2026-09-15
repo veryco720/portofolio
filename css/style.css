@@ -301,9 +301,10 @@ nav h1::first-letter {
     color: var(--dark-light);
 }
 
-/* ========================= 
-    PENDIDIKAN
-   ========================= */
+/* =========================== 
+    PENDIDIKAN dan PENGALAMAN
+   =========================== */
+/* STUDY SECTION */
 .study-section {
   width: 100%;
   max-width: none;
@@ -370,6 +371,35 @@ nav h1::first-letter {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
+}
+
+.study-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 5px 12px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* PENGALAMAN */
+.experience-card {
+  border-top-color: var(--secondary);
+}
+
+.experience-card .study-label {
+  background: #cffafe;
+  color: #0891b2;
+}
+
+.experience-card h3 {
+  margin-bottom: 12px;
+}
+
+.experience-card .technology {
+  margin-top: 20px;
 }
 
 /* =========================
