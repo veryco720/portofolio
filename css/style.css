@@ -819,7 +819,7 @@ nav h1::first-letter {
 }
 
 /* =========================
-   CONTACT
+   CONTACT 
 ========================= */
 .contact {
     text-align: center;
@@ -836,64 +836,35 @@ nav h1::first-letter {
     margin-bottom: 12px;
 }
 
-.contact p {
+.contact > p {
     color: #94a3b8;
     margin-bottom: 35px;
     font-size: 16px;
 }
 
-/* Grouping Contact Buttons */
-.contact-buttons {
+.contact-list {
     display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.contact .button {
-    border: none;
-    cursor: pointer;
-    box-shadow: none;
+.contact-list p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #e2e8f0;
+    margin: 0;
 }
 
-.contact .button.btn-danger {
-    background: #ef4444;
-    color: white;
-}
-.contact .button.btn-danger:hover {
-    background: #dc2626;
-}
-
-.contact .button.btn-cyan {
-    background: var(--secondary);
-    color: var(--dark);
-}
-.contact .button.btn-cyan:hover {
-    background: #22d3ee;
-}
-
-.contact .button.btn-pink {
-    background: #ec4899;
-    color: white;
-}
-.contact .button.btn-pink:hover {
-    background: #db2777;
-}
-
-.contact .button.btn-dark {
-    background: #334155;
-    color: white;
-}
-.contact .button.btn-dark:hover {
-    background: #475569;
-}
-
-.contact .button.btn-emerald {
-    background: #10b981;
-    color: white;
-}
-.contact .button.btn-emerald:hover {
-    background: #34d399;
+.contact-list i {
+    color: var(--secondary);
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
 }
 
 /* =========================
@@ -903,12 +874,57 @@ footer {
     text-align: center;
     background: #020617;
     color: #64748b;
-    padding: 24px;
+    padding: 40px 24px 24px;
     border-top: 1px solid #1e293b;
 }
 
-footer p {
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #e2e8f0;
+    letter-spacing: 0.5px;
+}
+
+/* Navigasi singkat = media sosial */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #94a3b8;
     font-size: 13px;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #0f172a;
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: white;
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: #475569;
+    margin-top: 8px;
 }
 
 /* =========================
