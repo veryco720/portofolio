@@ -888,6 +888,14 @@ nav h1::first-letter {
     background: #475569;
 }
 
+.contact .button.btn-emerald {
+    background: #10b981;
+    color: white;
+}
+.contact .button.btn-emerald:hover {
+    background: #34d399;
+}
+
 /* =========================
    FOOTER
 ========================= */
