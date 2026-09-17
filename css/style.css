@@ -900,7 +900,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     padding-top: 16px;
     border-top: 1px solid #1e293b;
 }
@@ -915,9 +915,10 @@ footer {
 /* Navigasi singkat = media sosial */
 .footer-nav {
     display: flex;
-    gap: 10px;
+    gap: 10px;             
     align-items: center;
-    flex-shrink: 0;
+    width: auto;          
+    justify-content: flex-start; 
 }
 
 .footer-nav a {
