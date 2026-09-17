@@ -871,10 +871,9 @@ nav h1::first-letter {
    FOOTER
 ========================= */
 footer {
-    text-align: center;
     background: #020617;
     color: #64748b;
-    padding: 40px 24px 24px;
+    padding: 30px 24px;
     border-top: 1px solid #1e293b;
 }
 
@@ -882,8 +881,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
-    max-width: 900px;
+    gap: 16px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -892,26 +891,45 @@ footer {
     font-weight: 700;
     color: #e2e8f0;
     letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* Baris bawah: copyright (kiri) + sosmed (kanan) */
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    border-top: 1px solid #1e293b;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: #475569;
+    margin: 0;
 }
 
 /* Navigasi singkat = media sosial */
 .footer-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
+    gap: 10px;
+    align-items: center;
 }
 
 .footer-nav a {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    color: #94a3b8;
-    font-size: 13px;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 999px;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     background: #0f172a;
+    color: #94a3b8;
+    font-size: 15px;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -921,12 +939,13 @@ footer {
     transform: translateY(-3px);
 }
 
-.footer-copy {
-    font-size: 12px;
-    color: #475569;
-    margin-top: 8px;
+/* Responsive: di layar kecil, susun ke bawah */
+@media (max-width: 600px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
-
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
